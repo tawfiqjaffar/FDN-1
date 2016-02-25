@@ -20,6 +20,7 @@ public class Back : MonoBehaviour {
             return;
         GameObject g = stack.Pop();
         g.active = false;
+        stack.Peek().active = true;
     }
 
     public void Push(GameObject g)

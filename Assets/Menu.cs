@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class Menu : MonoBehaviour {
     public Back backer;
     public GameObject gameobj;
+    public bool main;
+    public GameObject parent;
 	// Use this for initialization
 	void Start () 
     {
@@ -25,5 +27,6 @@ public class Menu : MonoBehaviour {
         else
             backer.Pop();
         gameobj.active = !gameobj.active;
+        parent.active = main;
     }
 }
