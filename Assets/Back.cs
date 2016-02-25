@@ -17,10 +17,11 @@ public class Back : MonoBehaviour {
     public void Clicked()
     {
         if (stack.Count == 0)
-            return;
+            Application.Quit();
         GameObject g = stack.Pop();
         g.active = false;
-        stack.Peek().active = true;
+        if (stack.Count != 0)
+            stack.Peek().active = true;
     }
 
     public void Push(GameObject g)
