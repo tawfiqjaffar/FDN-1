@@ -19,7 +19,7 @@ public class Slide_Text : MonoBehaviour {
             Top_pos[i] = new Vector3(0,30 * i,0);
             Debug.Log("i : " + i);
             Debug.Log("Test\n");
-            Bot_pos[i] = new Vector3(0, - (150 + 35 * i), 0);
+            Bot_pos[i] = new Vector3(0, - (300 + 45 * i), 0);
         }
         
 	}

@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
+        Debug.Log("I started");
         gameobj.active = false;
 	}
 	
@@ -22,6 +23,7 @@ public class Menu : MonoBehaviour {
 
     public void Clicked()
     {
+        Debug.Log("I clicked\n");
         if (!gameobj.active)
             backer.Push(gameobj);
         else
